@@ -59,5 +59,26 @@ pipeline {
                 echo 'docker run completed'
             }
         }
+        stage('Docker Login ') {
+            steps {
+                dir('test-jenkins-application') {
+                    sh 'docker login -u vaibhavnangia2001@gmail.com -p Qwerty@123#'
+                }
+            }
+        }
+        stage('Docker Image Push ') {
+            steps {
+                dir('test-jenkins-application') {
+                    sh 'docker push vn2001/java-jenkins-docker:latest'
+                }
+            }
+        }
+        stage('Clean Work Space ') {
+            steps {
+                dir('test-jenkins-application') {
+                    cleanWs()
+                }
+            }
+        }
     }
 }
