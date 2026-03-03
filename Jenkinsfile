@@ -62,7 +62,7 @@ pipeline {
         stage('Docker Login ') {
             steps {
                 dir('test-jenkins-application') {
-                    sh 'docker login -u vaibhavnangia2001@gmail.com -p Qwerty@123#'
+                    sh 'docker login -u vaibhavnangia2001@gmail.com -p Qwerty@123'
                 }
             }
         }
