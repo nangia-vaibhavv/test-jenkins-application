@@ -17,7 +17,7 @@ pipeline {
         stage('Maven clean') {
             steps {
                 echo 'clean started'
-                dir('test-jenkins-application') {
+                dir('javac ') {
                   sh 'mvn clean package'
                 }
                 echo 'clean completed'
