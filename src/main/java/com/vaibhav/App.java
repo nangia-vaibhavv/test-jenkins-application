@@ -1,4 +1,4 @@
-package main.java.com.vaibhav;
+package com.vaibhav;
 
 /**
  * Hello world!
