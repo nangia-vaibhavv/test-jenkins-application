@@ -17,8 +17,8 @@ pipeline {
         stage('Maven clean') {
             steps {
                 echo 'clean started'
-                dir('javac ') {
-                  sh 'mvn clean package'
+                dir('test-jenkins-application'){
+                    sh 'mvn clean package'
                 }
                 echo 'clean completed'
             }
@@ -26,14 +26,18 @@ pipeline {
         stage('Maven test') {
             steps {
                 echo 'testing started'
+                dir('test-jenkins-application'){
                 sh 'mvn test'
+            }
                 echo 'testing completed'
             }
         }
         stage('Maven compile') {
             steps {
                 echo 'compile started'
+                dir('test-jenkins-application'){
                 sh 'mvn test'
+            }
                 echo 'compile completed'
             }
         }
