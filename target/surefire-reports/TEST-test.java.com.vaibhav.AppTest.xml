@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="test.java.com.vaibhav.AppTest" time="0.012" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="test.java.com.vaibhav.AppTest" time="0.013" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/vaibhavnangia/Documents/Documents - TRKINC-MAC001/Me/practice/spring/java-app/target/surefire/surefirebooter-20260304000738180_3.jar /Users/vaibhavnangia/Documents/Documents - TRKINC-MAC001/Me/practice/spring/java-app/target/surefire 2026-03-04T00-07-38_140-jvmRun1 surefire-20260304000738180_1tmp surefire_0-20260304000738180_2tmp"/>
+    <property name="sun.java.command" value="/Users/vaibhavnangia/Documents/Documents - TRKINC-MAC001/Me/practice/spring/java-app/target/surefire/surefirebooter-20260304001640015_3.jar /Users/vaibhavnangia/Documents/Documents - TRKINC-MAC001/Me/practice/spring/java-app/target/surefire 2026-03-04T00-16-39_969-jvmRun1 surefire-20260304001640015_1tmp surefire_0-20260304001640015_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/vaibhavnangia/Documents/Documents - TRKINC-MAC001/Me/practice/spring/java-app/target/test-classes:/Users/vaibhavnangia/Documents/Documents - TRKINC-MAC001/Me/practice/spring/java-app/target/classes:/Users/vaibhavnangia/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/vaibhavnangia/Documents/Documents - TRKINC-MAC001/Me/practice/spring/java-app/target/surefire/surefirebooter-20260304000738180_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/vaibhavnangia/Documents/Documents - TRKINC-MAC001/Me/practice/spring/java-app/target/surefire/surefirebooter-20260304001640015_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="25.0.2"/>
@@ -59,5 +59,5 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="testApp" classname="test.java.com.vaibhav.AppTest" time="0.001"/>
+  <testcase name="testApp" classname="test.java.com.vaibhav.AppTest" time="0.002"/>
 </testsuite>

@@ -41,5 +41,14 @@ pipeline {
                 echo 'compile completed'
             }
         }
+        stage('Docker build') {
+            steps {
+                echo 'docker build started'
+                dir('test-jenkins-application'){
+                    sh 'docker build -t java-jenkins-docker:latest .'
+                }
+                echo 'docker build completed'
+            }
+        }
     }
 }
