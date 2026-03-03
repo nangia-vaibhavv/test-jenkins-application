@@ -1,14 +1,12 @@
-{
+pipeline {
     agent any
+
     stages {
         stage('Clone git repository') {
-
             steps {
-                echo 'start git repo clone'
-                dir('Jenkinsfile') {
-                    sh 'git clone https://github.com/nangia-vaibhavv/test-jenkins-application.git'
-                }
-                echo 'clonning repository completed'
+                echo 'Start git repo clone'
+                sh 'git clone https://github.com/nangia-vaibhavv/test-jenkins-application.git'
+                echo 'Cloning repository completed'
             }
         }
     }
