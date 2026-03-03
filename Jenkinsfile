@@ -1,15 +1,12 @@
 {
-agent any
-stages {
-stage('Clone repository') {
-echo 'repo cloning started'
-sh 'git clone https://github.com/nangia-vaibhavv/test-jenkins-application.git'
-echo 'repo clone completed'
-}
-stage('Compile') {
-echo 'initiating compiler'
-sh 'mvn clean package'
-echo 'compilation completed'
-}
-}
+    agent any
+    stages {
+        stage('Clone git repository') {
+            step {
+                echo 'start git repo clone'
+                sh 'git clone https://github.com/nangia-vaibhavv/test-jenkins-application.git'
+                echo 'clonning repository completed'
+            }
+        }
+    }
 }
