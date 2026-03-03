@@ -45,7 +45,7 @@ pipeline {
             steps {
                 echo 'docker build started'
                 dir('test-jenkins-application'){
-                    sh 'docker build -t java-jenkins-docker:latest .'
+                    sh 'docker build -t vn2001/java-jenkins-docker:latest .'
                 }
                 echo 'docker build completed'
             }
@@ -54,7 +54,7 @@ pipeline {
             steps {
                 echo 'docker run started'
                 dir('test-jenkins-application'){
-                    sh 'docker run -t java-jenkins-docker:latest .'
+                    sh 'docker run -t vn2001/java-jenkins-docker:latest .'
                 }
                 echo 'docker run completed'
             }
