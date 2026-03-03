@@ -9,5 +9,26 @@ pipeline {
                 echo 'Cloning repository completed'
             }
         }
+        stage('Maven compile') {
+            steps {
+                echo 'clean started'
+                sh 'mvn clean package'
+                echo 'clean completed'
+            }
+        }
+        stage('Maven test') {
+            steps {
+                echo 'testing started'
+                sh 'mvn test'
+                echo 'testing completed'
+            }
+        }
+        stage('Maven compile') {
+            steps {
+                echo 'compile started'
+                sh 'mvn test'
+                echo 'compile completed'
+            }
+        }
     }
 }
