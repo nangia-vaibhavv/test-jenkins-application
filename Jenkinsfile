@@ -1,8 +1,10 @@
 {
 agent any
-stages('Build') {
-echo 'initializing maven compile'
+stages {
+stage('Compile') {
+echo 'initiating compiler'
 sh 'mvn clean package'
-echo 'maven compilation is completed
+echo 'compilation completed'
+}
 }
 }
