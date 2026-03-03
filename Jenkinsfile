@@ -9,7 +9,7 @@ pipeline {
                 echo 'Cloning repository completed'
             }
         }
-        stage('Maven compile') {
+        stage('Maven clean') {
             steps {
                 echo 'clean started'
                 sh 'mvn clean package'
