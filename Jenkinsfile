@@ -2,6 +2,11 @@ pipeline {
     agent any
 
     stages {
+        stage('Clean Workspace') {
+            steps {
+                deleteDir()
+            }
+        }
         stage('Clone git repository') {
             steps {
                 echo 'Start git repo clone'
@@ -12,7 +17,9 @@ pipeline {
         stage('Maven clean') {
             steps {
                 echo 'clean started'
-                sh 'mvn clean package'
+                dir('test-jenkins-application')
+                  sh 'mvn clean package'
+                }
                 echo 'clean completed'
             }
         }
